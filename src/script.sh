@@ -2,7 +2,7 @@
 echo "Nombre del archivo es: " $0
 echo  "Parametros ingresados son: " $@
 sleep 5 & 
-#$!: guarda el pid del ultimo proceso en estado el sleep
+#$!: guarda el pid del ultimo proceso en estado sleep
 process_id=$!
 echo "PID: $process_id"
 cat /proc/$process_id/status | head -n 10
